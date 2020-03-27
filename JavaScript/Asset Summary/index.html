@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <script src = "script.js"></script>
+     <style>    
+    table, th,td {
+        border: 1px solid black;
+    }
+     ul{
+  width:5%
+}
+
+li{
+    width:20%;
+    display:block;
+}
+
+li{
+    list-style:none;
+    clear:both;
+}
+
+li label{
+    float:left;
+}
+
+li span{
+     float:center;
+}
+li input{
+    float:right;
+}
+    
+</style>
+ </head>
+<body>
+<center>
+    <h2>Asset Details</h2>
+    <ui>
+        <li>
+            <label>Asset ID</label>
+            <span>:</span>
+            <input id="asset_id" type="text"></input>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <label>Asset Type</label>
+            <span>:</span>
+            <input id="type" type="textbox"></input>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <label>Supplier Name</label>
+            <span>:</span>
+            <input id="supplier" type="textbox"></input>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <label>Manufacturer</label>
+            <span>:</span>
+            <input id="manufacturer" type="textbox"></input>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <button id="add" type="button" onclick="addAsset()">Add Asset</button>
+            <button id="display" type="button" onclick="displayAsset()">Display Asset</button>
+        </li>
+         <div id="result">
+         <h3></h3>
+         <table id="tab">
+             
+         </table>
+        </div>
+    </ui>
+   </center>
+</body>
+	 	  	    	    		        	 	
