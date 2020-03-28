@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .box {
+            width: 430px;
+            margin: 10px 0;
+            margin-left: 400px;
+        }
+
+        .box label {
+            width: 120px;
+            padding-right: 10px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .button {
+            margin-left: 530px;
+        }
+
+        .box,
+        .b {
+            display: inline-block;
+        }
+    </style>
+    <script src="script.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+    <!--Fill your code-->
+
+    <div id="payment">
+        <h2>Payment Processing</h2>
+        <div class="box">
+            <label>Payment Option</label><select id="paymentOption">
+                <option selected="selected" value="default">Please select</option>
+                <option value="debit">Debit card</option>
+                <option value="credit">Credit card</option>
+            </select></div>
+        <div class="b" id="optionWarning" style="color: red" align="right"></div>
+
+        <div class="clear"></div>
+        <div class="box">
+            <label>Card Type</label><select id="cardType">
+                <option selected="selected" value="default">Please select</option>
+                <option value="visa">Visa</option>
+                <option value="master">Master Card</option>
+            </select></div>
+        <div class="b" id="typeWarning" style="color: red" align="right"></div>
+
+        <div class="clear"></div>
+        <div class="box"><label>Card Number</label><input type="text" id="cardNumber"></div>
+        <div class="b" id="cardWarning" style="color: red" align="right"></div>
+
+        <div class="clear"></div>
+        <div class="box"><label>CVV</label><input type="text" id="cvv"></div>
+        <div class="b" id="cvvWarning" style="color: red" align="right"></div>
+
+        <div class="clear"></div>
+        <div class="box"><label>Expiry Date</label><input type="text" id="expireDate" placeholder="mm/dd/yyyy"></div>
+        <div class="b" id="dateWarning" style="color: red" align="right"></div>
+
+        <div class="clear"></div>
+        <div class="box"><label>Amount</label><input type="text" id="amount"></div>
+        <div class="b" id="amountWarning" style="color: red" align="center"></div>
+
+        <div class="clear"></div>
+        <div class="button"><button id="proceed" value="proceed" onClick="validate()">Proceeed Payment</button></div>
+    </div>
+</body>
+
+</html>	 	  	    	    		        	 	
